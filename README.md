@@ -1,4 +1,4 @@
-# Parking Likelihood — know if you'll find a spot before you arrive
+# Parking Likelihood: know if you'll find a spot before you arrive
 
 > **PM case study + working prototype** · Maps / navigation · City of Melbourne live parking-bay sensors (open data)
 
@@ -77,6 +77,6 @@ python src/analyze.py                          # -> docs/snapshot.json + charts
 python -m http.server 8765 -d docs             # open http://localhost:8765
 node tools/record-demo.cjs                     # optional: hero.png + demo.webm (needs playwright)
 ```
-Data: [City of Melbourne Open Data — On-street Parking Bay Sensors](https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/) and Parking zones linked to street segments, licensed CC BY 4.0. Map tiles © OpenStreetMap contributors. Code: MIT. A portfolio concept, not affiliated with Google.
+Data: [City of Melbourne Open Data, On-street Parking Bay Sensors](https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/) and Parking zones linked to street segments, licensed CC BY 4.0. Map tiles © OpenStreetMap contributors. Code: MIT. A portfolio concept, not affiliated with Google.
 
-**About** — Built by Sai Akhilesh Veldi. [Portfolio](#) · [LinkedIn](https://www.linkedin.com/in/akhileshsai/)
+**About**, Built by Sai Akhilesh Veldi. [Portfolio](#) · [LinkedIn](https://www.linkedin.com/in/akhileshsai/)
