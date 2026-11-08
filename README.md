@@ -2,9 +2,10 @@
 
 > **PM case study + working prototype** · Maps / navigation · City of Melbourne live parking-bay sensors (open data)
 
-![Demo](docs/hero.png)
+**▶ 60-second demo (plays automatically)**
 
-**▶ [Live demo](https://akhilesh360.github.io/parking-likelihood/)** · **🎬 [60-second walkthrough](docs/demo.webm)** · [Demo script](docs/demo-script.md)
+![60-second walkthrough](docs/walkthrough.gif)
+**Live demo: [akhilesh360.github.io/parking-likelihood](https://akhilesh360.github.io/parking-likelihood/)**
 
 ## How it works
 ![How it works](docs/flow.png)
