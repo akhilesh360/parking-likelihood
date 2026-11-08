@@ -18,7 +18,7 @@
 *{box-sizing:border-box}html,body{margin:0;height:100%}
 body{font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
 header{padding:14px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);background:var(--card)}
-header h1{font-size:16px;margin:0;font-weight:600}header .sub{color:var(--muted);font-size:13px}
+header h1{font-size:16px;margin:0;font-weight:600}header .sub{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 header .sp{flex:1}
 .toggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
 .toggle button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;padding:6px 14px;cursor:pointer}
@@ -50,7 +50,7 @@ header{padding:12px 16px;flex-wrap:wrap}header .sub{display:none}}
 </head>
 <body>
 <header>
-  <h1>Parking likelihood</h1><span class="sub">before you arrive · Melbourne CBD</span>
+  <div><h1>Know whether a bay will be free before you arrive</h1><span class="sub">Held-out check, Melbourne CBD: 5-minute turnover forecasts within a few points of observed (Brier 0.190 vs 0.203 city average)</span></div>
   <span class="sp"></span>
   <div class="toggle" role="group" aria-label="Data source">
     <button id="bSnap" class="on">Snapshot</button><button id="bLive">Live</button>
@@ -60,29 +60,31 @@ header{padding:12px 16px;flex-wrap:wrap}header .sub{display:none}}
   <aside>
     <div class="card" id="dest">
       <p class="eyebrow">Arriving at</p>
-      <p class="hint">Tap any block on the map to see the chip a driver would get before arrival.</p>
+      <p class="hint">Select a block on the map to view the arrival status a driver would receive.</p>
     </div>
     <div class="card">
-      <p class="eyebrow">Right now across the city</p>
+      <p class="eyebrow">City-wide status</p>
       <div class="stats" id="stats"></div>
       <p class="note" id="asof" style="margin:10px 0 0"></p>
     </div>
-    <p class="note">Each dot is one parking zone (a block face). Score = share of bays free, from City of Melbourne in-ground sensors.
-      <b>High</b>: ≥25% free and ≥2 bays. <b>Low</b>: &lt;10% free or &lt;1 bay. Sensors silent for 7+ days are ignored.<br>
-      Data: <a href="https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/">City of Melbourne Open Data</a>, CC BY 4.0. A portfolio concept, not a Google product.</p>
+    <p class="note">Each dot is one parking zone (a block face). From City of Melbourne in-ground sensors.
+      <b>Free now</b>: 2+ bays free at the latest read. <b>Likely within 5 min</b>: 50%+ chance a bay frees in 5 min, from each block's turnover rate (Poisson, shrunk toward the city average). <b>Hard</b>: neither. Sensors silent for 7+ days are ignored.<br>
+      <span style="font-size:11px">Data: <a href="https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/">City of Melbourne Open Data</a>, CC BY 4.0. A portfolio concept, not a Google product.</span></p>
   </aside>
   <div id="map" aria-label="Map of parking zones"></div>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 const API="https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bay-sensors/exports/json";
-const LABEL={High:"Parking likely",Medium:"Parking possible",Low:"Parking hard"};
+const LABEL={High:"Free now",Medium:"Likely within 5 min",Low:"Hard"};
+const CHIP={"Free now":"High","Likely within 5 min":"Medium","Hard":"Low"};
+const chipOf=(free,p5)=>free>=2?"High":(p5>=.5?"Medium":"Low");
+let turn={};
 const COLOR=k=>getComputedStyle(document.documentElement).getPropertyValue({High:"--high",Medium:"--med",Low:"--low"}[k]).trim();
 const map=L.map("map",{zoomControl:true}).setView([-37.8125,144.9625],15);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,
   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Parking: City of Melbourne (CC BY 4.0)'}).addTo(map);
 let layer=L.layerGroup().addTo(map), zones=[], names={};
-const score=(share,free)=>share>=.25&&free>=2?"High":(share<.10||free<1?"Low":"Medium");
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const dist=(a,b)=>Math.hypot(a.lat-b.lat,(a.lon-b.lon)*Math.cos(a.lat*Math.PI/180));
 
@@ -92,7 +94,7 @@ function show(z){
   document.getElementById("dest").innerHTML=`<p class="eyebrow">Arriving at</p>
    <p class="dest">${esc(z.name)}</p><p class="eta">Zone ${z.zone} · ${z.bays} sensor bays</p>
    <span class="chip ${z.score}"><span class="dot"></span>${LABEL[z.score]}</span>
-   <p class="why">About ${z.avg_free} of ${z.bays} bays free (${Math.round(z.free_share*100)}%).</p>
+   <p class="why">${z.free_now} of ${z.bays} bays free at the latest read. ${z.p5!=null?`~${Math.round(z.p5*100)}% chance a spot frees in 5 min (~${Math.round(z.p10*100)}% in 10).`:""}</p>
    ${z.score!=="High"&&near?`<p class="alt">Better bet: <a id="go">${esc(near.name)}</a> · ~${m} m away</p>`:""}`;
   const g=document.getElementById("go"); if(g) g.onclick=()=>{map.setView([near.lat,near.lon],17);show(near)};
 }
@@ -103,14 +105,14 @@ function draw(asof){
      .on("click",()=>show(z)).bindTooltip(`${esc(z.name)} · ${LABEL[z.score]}`).addTo(layer);
   }
   const c={High:0,Medium:0,Low:0}; zones.forEach(z=>c[z.score]++);
-  document.getElementById("stats").innerHTML=Object.keys(c).map(k=>`<div class="stat ${k}"><b>${c[k]}</b><span>${LABEL[k].replace("Parking ","")}</span></div>`).join("");
+  document.getElementById("stats").innerHTML=Object.keys(c).map(k=>`<div class="stat ${k}"><b>${c[k]}</b><span>${LABEL[k]}</span></div>`).join("");
   document.getElementById("asof").textContent=asof;
 }
 async function loadSnap(){
   const d=await (await fetch("snapshot.json")).json();
-  zones=d.zones; zones.forEach(z=>names[z.zone]=z.name);
+  zones=d.zones.map(z=>({...z,score:CHIP[z.chip]})); zones.forEach(z=>{names[z.zone]=z.name;turn[z.zone]={p5:z.p5,p10:z.p10}});
   const s=d.summary;
-  draw(`Snapshot: ${s.snapshots} reads over ${s.minutes_covered} min, ${s.first_snapshot_local}. ${s.bays_scored.toLocaleString()} bays in ${s.zones_scored} zones.`);
+  draw(`Snapshot: ${s.snapshots} reads, ${s.turnover.window_local}. ${s.bays_scored.toLocaleString()} bays in ${s.zones_scored} zones. Chance a spot frees comes from bay turnover in that window.`);
 }
 async function loadLive(){
   document.getElementById("asof").textContent="Loading live sensors…";
@@ -123,7 +125,7 @@ async function loadLive(){
       z.bays++; z.free+=r.status_description==="Unoccupied"?1:0; z.lat+=r.location.lat; z.lon+=r.location.lon;
     }
     zones=Object.values(by).filter(z=>z.bays>=4).map(z=>({zone:z.zone,name:names[z.zone]||`Zone ${z.zone}`,bays:z.bays,
-      avg_free:z.free,free_share:z.free/z.bays,lat:z.lat/z.bays,lon:z.lon/z.bays,score:score(z.free/z.bays,z.free)}));
+      free_now:z.free,lat:z.lat/z.bays,lon:z.lon/z.bays,p5:turn[z.zone]?.p5,p10:turn[z.zone]?.p10})).map(z=>({...z,score:chipOf(z.free_now,z.p5??0)}));
     draw(`Live from the City of Melbourne API at ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})} your time.`);
   }catch(e){document.getElementById("asof").textContent="Live feed unavailable; showing snapshot."; loadSnap();}
 }
