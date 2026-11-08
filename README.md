@@ -5,6 +5,7 @@
 **▶ 60-second demo (plays automatically)**
 
 ![60-second walkthrough](docs/walkthrough.gif)
+
 **Live demo: [akhilesh360.github.io/parking-likelihood](https://akhilesh360.github.io/parking-likelihood/)**
 
 ## How it works
