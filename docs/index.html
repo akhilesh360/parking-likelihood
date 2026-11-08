@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parking Likelihood</title>
+<meta name="description" content="A 'parking likelihood' chip before you arrive, built from City of Melbourne open parking sensor data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--ink:#1f2328;--muted:#656d76;--line:#d0d7de;--accent:#0b57d0;
+--high:#1a7f37;--high-bg:#dafbe1;--med:#9a6700;--med-bg:#fff8c5;--low:#cf222e;--low-bg:#ffebe9;--shadow:0 6px 24px rgba(31,35,40,.12)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--muted:#8d96a0;--line:#30363d;--accent:#7cacf8;
+--high:#3fb950;--high-bg:#12261e;--med:#d29922;--med-bg:#272115;--low:#f85149;--low-bg:#2d1517;--shadow:0 6px 24px rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--muted:#8d96a0;--line:#30363d;--accent:#7cacf8;
+--high:#3fb950;--high-bg:#12261e;--med:#d29922;--med-bg:#272115;--low:#f85149;--low-bg:#2d1517}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
+header{padding:14px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);background:var(--card)}
+header h1{font-size:16px;margin:0;font-weight:600}header .sub{color:var(--muted);font-size:13px}
+header .sp{flex:1}
+.toggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.toggle button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;padding:6px 14px;cursor:pointer}
+.toggle button.on{background:var(--accent);color:#fff}
+main{flex:1;display:grid;grid-template-columns:360px 1fr;min-height:0}
+aside{padding:20px;overflow:auto;border-right:1px solid var(--line);background:var(--card)}
+#map{height:100%;min-height:300px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:16px;background:var(--card)}
+.eyebrow{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.dest{font-size:18px;font-weight:600;margin:0 0 4px}
+.eta{color:var(--muted);font-size:13px;margin:0 0 12px}
+.chip{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:7px 14px;font-weight:600;font-size:14px}
+.chip .dot{width:9px;height:9px;border-radius:50%;background:currentColor}
+.chip.High{color:var(--high);background:var(--high-bg)}.chip.Medium{color:var(--med);background:var(--med-bg)}.chip.Low{color:var(--low);background:var(--low-bg)}
+.why{font-size:13px;color:var(--muted);margin:10px 0 0;line-height:1.5}
+.alt{margin-top:12px;font-size:13px}.alt a{color:var(--accent);cursor:pointer;text-decoration:none;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{border-radius:10px;padding:10px;background:var(--bg);text-align:center}
+.stat b{display:block;font-size:20px}.stat span{font-size:11px;color:var(--muted)}
+.stat.High b{color:var(--high)}.stat.Medium b{color:var(--med)}.stat.Low b{color:var(--low)}
+.note{font-size:12px;color:var(--muted);line-height:1.5}
+.note a{color:var(--accent)}
+.leaflet-container{background:var(--bg);font-family:inherit}
+.hint{color:var(--muted);font-size:14px}
+@media (max-width:760px){main{grid-template-columns:1fr;grid-template-rows:55vh auto}
+aside{order:2;border-right:0;border-top:1px solid var(--line);padding:16px}#map{order:1}
+header{padding:12px 16px;flex-wrap:wrap}header .sub{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Parking likelihood</h1><span class="sub">before you arrive · Melbourne CBD</span>
+  <span class="sp"></span>
+  <div class="toggle" role="group" aria-label="Data source">
+    <button id="bSnap" class="on">Snapshot</button><button id="bLive">Live</button>
+  </div>
+</header>
+<main>
+  <aside>
+    <div class="card" id="dest">
+      <p class="eyebrow">Arriving at</p>
+      <p class="hint">Tap any block on the map to see the chip a driver would get before arrival.</p>
+    </div>
+    <div class="card">
+      <p class="eyebrow">Right now across the city</p>
+      <div class="stats" id="stats"></div>
+      <p class="note" id="asof" style="margin:10px 0 0"></p>
+    </div>
+    <p class="note">Each dot is one parking zone (a block face). Score = share of bays free, from City of Melbourne in-ground sensors.
+      <b>High</b>: ≥25% free and ≥2 bays. <b>Low</b>: &lt;10% free or &lt;1 bay. Sensors silent for 7+ days are ignored.<br>
+      Data: <a href="https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/">City of Melbourne Open Data</a>, CC BY 4.0. A portfolio concept, not a Google product.</p>
+  </aside>
+  <div id="map" aria-label="Map of parking zones"></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const API="https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bay-sensors/exports/json";
+const LABEL={High:"Parking likely",Medium:"Parking possible",Low:"Parking hard"};
+const COLOR=k=>getComputedStyle(document.documentElement).getPropertyValue({High:"--high",Medium:"--med",Low:"--low"}[k]).trim();
+const map=L.map("map",{zoomControl:true}).setView([-37.8125,144.9625],15);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Parking: City of Melbourne (CC BY 4.0)'}).addTo(map);
+let layer=L.layerGroup().addTo(map), zones=[], names={};
+const score=(share,free)=>share>=.25&&free>=2?"High":(share<.10||free<1?"Low":"Medium");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dist=(a,b)=>Math.hypot(a.lat-b.lat,(a.lon-b.lon)*Math.cos(a.lat*Math.PI/180));
+
+function show(z){
+  const near=zones.filter(o=>o.score==="High"&&o!==z).sort((a,b)=>dist(a,z)-dist(b,z))[0];
+  const m=near?Math.round(dist(near,z)*111000):null;
+  document.getElementById("dest").innerHTML=`<p class="eyebrow">Arriving at</p>
+   <p class="dest">${esc(z.name)}</p><p class="eta">Zone ${z.zone} · ${z.bays} sensor bays</p>
+   <span class="chip ${z.score}"><span class="dot"></span>${LABEL[z.score]}</span>
+   <p class="why">About ${z.avg_free} of ${z.bays} bays free (${Math.round(z.free_share*100)}%).</p>
+   ${z.score!=="High"&&near?`<p class="alt">Better bet: <a id="go">${esc(near.name)}</a> · ~${m} m away</p>`:""}`;
+  const g=document.getElementById("go"); if(g) g.onclick=()=>{map.setView([near.lat,near.lon],17);show(near)};
+}
+function draw(asof){
+  layer.clearLayers();
+  for(const z of zones){
+    L.circleMarker([z.lat,z.lon],{radius:4+Math.sqrt(z.bays),color:"#fff",weight:1.5,fillColor:COLOR(z.score),fillOpacity:.9})
+     .on("click",()=>show(z)).bindTooltip(`${esc(z.name)} · ${LABEL[z.score]}`).addTo(layer);
+  }
+  const c={High:0,Medium:0,Low:0}; zones.forEach(z=>c[z.score]++);
+  document.getElementById("stats").innerHTML=Object.keys(c).map(k=>`<div class="stat ${k}"><b>${c[k]}</b><span>${LABEL[k].replace("Parking ","")}</span></div>`).join("");
+  document.getElementById("asof").textContent=asof;
+}
+async function loadSnap(){
+  const d=await (await fetch("snapshot.json")).json();
+  zones=d.zones; zones.forEach(z=>names[z.zone]=z.name);
+  const s=d.summary;
+  draw(`Snapshot: ${s.snapshots} reads over ${s.minutes_covered} min, ${s.first_snapshot_local}. ${s.bays_scored.toLocaleString()} bays in ${s.zones_scored} zones.`);
+}
+async function loadLive(){
+  document.getElementById("asof").textContent="Loading live sensors…";
+  try{
+    const rows=await (await fetch(API)).json(), now=Date.now(), by={};
+    for(const r of rows){
+      if(!r.location||!r.zone_number) continue;
+      if(now-Date.parse(r.status_timestamp)>7*864e5) continue;
+      const z=by[r.zone_number]??={zone:r.zone_number,bays:0,free:0,lat:0,lon:0};
+      z.bays++; z.free+=r.status_description==="Unoccupied"?1:0; z.lat+=r.location.lat; z.lon+=r.location.lon;
+    }
+    zones=Object.values(by).filter(z=>z.bays>=4).map(z=>({zone:z.zone,name:names[z.zone]||`Zone ${z.zone}`,bays:z.bays,
+      avg_free:z.free,free_share:z.free/z.bays,lat:z.lat/z.bays,lon:z.lon/z.bays,score:score(z.free/z.bays,z.free)}));
+    draw(`Live from the City of Melbourne API at ${new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"})} your time.`);
+  }catch(e){document.getElementById("asof").textContent="Live feed unavailable; showing snapshot."; loadSnap();}
+}
+const bS=document.getElementById("bSnap"), bL=document.getElementById("bLive");
+bS.onclick=()=>{bS.classList.add("on");bL.classList.remove("on");loadSnap()};
+bL.onclick=()=>{bL.classList.add("on");bS.classList.remove("on");loadLive()};
+loadSnap();
+</script>
+</body>
+</html>

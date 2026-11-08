@@ -1,0 +1,2773 @@
+{
+"summary": {
+"source": "City of Melbourne Open Data \u2013 On-street Parking Bay Sensors (CC BY 4.0)",
+"first_snapshot_local": "Sun 08 Nov 2026 12:55 AEDT",
+"last_snapshot_local": "Sun 08 Nov 2026 13:25 AEDT",
+"snapshots": 7,
+"minutes_covered": 30,
+"sensors_total": 5804,
+"sensors_stale": 2443,
+"zones_scored": 275,
+"bays_scored": 3083,
+"city_free_share": 0.433,
+"score_counts": {
+"High": 141,
+"Medium": 72,
+"Low": 62
+},
+"bay_changes_per_hour": 2459,
+"low_zones_with_a_change": 46
+},
+"zones": [
+{
+"zone": 7001,
+"name": "Argyle Place North (Lygon Street \u2013 Cardigan Street)",
+"lat": -37.802052,
+"lon": 144.965994,
+"bays": 31,
+"avg_free": 16.4,
+"free_share": 0.53,
+"score": "High"
+},
+{
+"zone": 7007,
+"name": "Bouverie Street (Queensberry Street \u2013 Lincoln Square South)",
+"lat": -37.803249,
+"lon": 144.961867,
+"bays": 5,
+"avg_free": 4.0,
+"free_share": 0.8,
+"score": "High"
+},
+{
+"zone": 7009,
+"name": "Berkeley Street (Pelham Street \u2013 Grattan Street)",
+"lat": -37.800876,
+"lon": 144.958646,
+"bays": 12,
+"avg_free": 8.1,
+"free_share": 0.679,
+"score": "High"
+},
+{
+"zone": 7010,
+"name": "Berkeley Street (Leicester Street \u2013 Queensberry Street)",
+"lat": -37.80316,
+"lon": 144.959015,
+"bays": 8,
+"avg_free": 6.0,
+"free_share": 0.75,
+"score": "High"
+},
+{
+"zone": 7012,
+"name": "Berkeley Street (Queensberry Street \u2013 Pelham Street)",
+"lat": -37.803273,
+"lon": 144.959146,
+"bays": 19,
+"avg_free": 10.3,
+"free_share": 0.541,
+"score": "High"
+},
+{
+"zone": 7017,
+"name": "Berkeley Street (Pelham Street \u2013 Grattan Street)",
+"lat": -37.80054,
+"lon": 144.958688,
+"bays": 8,
+"avg_free": 3.3,
+"free_share": 0.411,
+"score": "High"
+},
+{
+"zone": 7020,
+"name": "Bouverie Street (Queensberry Street \u2013 Lincoln Square South)",
+"lat": -37.803295,
+"lon": 144.961974,
+"bays": 66,
+"avg_free": 43.1,
+"free_share": 0.654,
+"score": "High"
+},
+{
+"zone": 7023,
+"name": "Leicester Street (Berkeley Street \u2013 Queensberry Street)",
+"lat": -37.805173,
+"lon": 144.960162,
+"bays": 9,
+"avg_free": 1.9,
+"free_share": 0.206,
+"score": "Medium"
+},
+{
+"zone": 7025,
+"name": "Bouverie Street (Victoria Street \u2013 Queensberry Street)",
+"lat": -37.805161,
+"lon": 144.961716,
+"bays": 16,
+"avg_free": 15.0,
+"free_share": 0.938,
+"score": "High"
+},
+{
+"zone": 7026,
+"name": "Clarendon Street (Hotham Street \u2013 Gipps Street)",
+"lat": -37.81321,
+"lon": 144.982958,
+"bays": 18,
+"avg_free": 15.4,
+"free_share": 0.857,
+"score": "High"
+},
+{
+"zone": 7028,
+"name": "Cardigan Street (Pelham Street \u2013 Argyle Place North)",
+"lat": -37.801375,
+"lon": 144.965327,
+"bays": 37,
+"avg_free": 21.7,
+"free_share": 0.587,
+"score": "High"
+},
+{
+"zone": 7029,
+"name": "Cardigan Street (Cardigan Street \u2013 Pelham Street)",
+"lat": -37.802668,
+"lon": 144.965126,
+"bays": 39,
+"avg_free": 34.1,
+"free_share": 0.875,
+"score": "High"
+},
+{
+"zone": 7030,
+"name": "Clarendon Street (Wellington Parade \u2013 George Street)",
+"lat": -37.814743,
+"lon": 144.982696,
+"bays": 29,
+"avg_free": 23.9,
+"free_share": 0.823,
+"score": "High"
+},
+{
+"zone": 7034,
+"name": "Cardigan Street (Grattan Street \u2013 Faraday Street)",
+"lat": -37.799574,
+"lon": 144.965615,
+"bays": 42,
+"avg_free": 1.0,
+"free_share": 0.024,
+"score": "Low"
+},
+{
+"zone": 7037,
+"name": "Cardigan Street (Grattan Street \u2013 Faraday Street)",
+"lat": -37.79991,
+"lon": 144.965451,
+"bays": 4,
+"avg_free": 0.4,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7045,
+"name": "Faraday Street (Cardigan Street \u2013 Swanston Street)",
+"lat": -37.79844,
+"lon": 144.964998,
+"bays": 25,
+"avg_free": 1.6,
+"free_share": 0.063,
+"score": "Low"
+},
+{
+"zone": 7046,
+"name": "Cardigan Street (Grattan Street \u2013 Faraday Street)",
+"lat": -37.799426,
+"lon": 144.965535,
+"bays": 7,
+"avg_free": 1.3,
+"free_share": 0.184,
+"score": "Medium"
+},
+{
+"zone": 7047,
+"name": "Grattan Street (Cardigan Street \u2013 Swanston Street)",
+"lat": -37.800534,
+"lon": 144.964936,
+"bays": 10,
+"avg_free": 7.3,
+"free_share": 0.729,
+"score": "High"
+},
+{
+"zone": 7048,
+"name": "Grattan Street (Lygon Street \u2013 Cardigan Street)",
+"lat": -37.800635,
+"lon": 144.965995,
+"bays": 9,
+"avg_free": 2.6,
+"free_share": 0.286,
+"score": "High"
+},
+{
+"zone": 7056,
+"name": "Leicester Street (Queensberry Street \u2013 Pelham Street)",
+"lat": -37.803727,
+"lon": 144.960506,
+"bays": 5,
+"avg_free": 4.0,
+"free_share": 0.8,
+"score": "High"
+},
+{
+"zone": 7057,
+"name": "Leicester Street (Queensberry Street \u2013 Pelham Street)",
+"lat": -37.803199,
+"lon": 144.960483,
+"bays": 36,
+"avg_free": 22.3,
+"free_share": 0.619,
+"score": "High"
+},
+{
+"zone": 7061,
+"name": "Lincoln Square North (Swanston Street \u2013 Bouverie Street)",
+"lat": -37.801628,
+"lon": 144.962839,
+"bays": 14,
+"avg_free": 11.1,
+"free_share": 0.796,
+"score": "High"
+},
+{
+"zone": 7062,
+"name": "Lincoln Square South (Swanston Street \u2013 Bouverie Street)",
+"lat": -37.803239,
+"lon": 144.962856,
+"bays": 8,
+"avg_free": 1.9,
+"free_share": 0.232,
+"score": "Medium"
+},
+{
+"zone": 7064,
+"name": "Lygon Street (Argyle Place South \u2013 Pelham Street)",
+"lat": -37.804306,
+"lon": 144.966225,
+"bays": 10,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7066,
+"name": "Lygon Street (Pelham Street \u2013 Argyle Place North)",
+"lat": -37.802746,
+"lon": 144.96649,
+"bays": 7,
+"avg_free": 0.4,
+"free_share": 0.061,
+"score": "Low"
+},
+{
+"zone": 7068,
+"name": "Lygon Street (Faraday Street \u2013 Elgin Street)",
+"lat": -37.797873,
+"lon": 144.967424,
+"bays": 10,
+"avg_free": 1.1,
+"free_share": 0.114,
+"score": "Medium"
+},
+{
+"zone": 7069,
+"name": "Lygon Street (Grattan Street \u2013 Faraday Street)",
+"lat": -37.799942,
+"lon": 144.967039,
+"bays": 18,
+"avg_free": 1.0,
+"free_share": 0.056,
+"score": "Low"
+},
+{
+"zone": 7070,
+"name": "Lygon Street (Faraday Street \u2013 Elgin Street)",
+"lat": -37.797667,
+"lon": 144.967473,
+"bays": 5,
+"avg_free": 2.0,
+"free_share": 0.4,
+"score": "High"
+},
+{
+"zone": 7071,
+"name": "Lygon Street (Grattan Street \u2013 Faraday Street)",
+"lat": -37.799678,
+"lon": 144.96713,
+"bays": 12,
+"avg_free": 1.3,
+"free_share": 0.107,
+"score": "Medium"
+},
+{
+"zone": 7072,
+"name": "Lygon Street (Argyle Place North \u2013 Grattan Street)",
+"lat": -37.801493,
+"lon": 144.966865,
+"bays": 13,
+"avg_free": 0.6,
+"free_share": 0.044,
+"score": "Low"
+},
+{
+"zone": 7075,
+"name": "Lygon Street (Argyle Place North \u2013 Grattan Street)",
+"lat": -37.801313,
+"lon": 144.966877,
+"bays": 4,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7076,
+"name": "Lygon Street (Victoria Street \u2013 Queensberry Street)",
+"lat": -37.806013,
+"lon": 144.966042,
+"bays": 29,
+"avg_free": 14.9,
+"free_share": 0.512,
+"score": "High"
+},
+{
+"zone": 7081,
+"name": "Nicholson Street (Victoria Street \u2013 Carlton Street)",
+"lat": -37.806868,
+"lon": 144.97325,
+"bays": 4,
+"avg_free": 1.1,
+"free_share": 0.286,
+"score": "Medium"
+},
+{
+"zone": 7083,
+"name": "Pelham Street (Berkeley Street \u2013 Barry Street)",
+"lat": -37.801977,
+"lon": 144.958892,
+"bays": 11,
+"avg_free": 8.0,
+"free_share": 0.727,
+"score": "High"
+},
+{
+"zone": 7084,
+"name": "Pelham Street (Bouverie Street \u2013 Leicester Street)",
+"lat": -37.802227,
+"lon": 144.96138,
+"bays": 36,
+"avg_free": 33.9,
+"free_share": 0.94,
+"score": "High"
+},
+{
+"zone": 7086,
+"name": "Pelham Street (Cardigan Street \u2013 Swanston Street)",
+"lat": -37.802544,
+"lon": 144.964276,
+"bays": 29,
+"avg_free": 12.1,
+"free_share": 0.419,
+"score": "High"
+},
+{
+"zone": 7089,
+"name": "Pelham Street (Drummond Street \u2013 Lygon Street)",
+"lat": -37.80291,
+"lon": 144.967315,
+"bays": 28,
+"avg_free": 7.3,
+"free_share": 0.26,
+"score": "High"
+},
+{
+"zone": 7090,
+"name": "Pelham Street (Drummond Street \u2013 Lygon Street)",
+"lat": -37.804349,
+"lon": 144.966406,
+"bays": 4,
+"avg_free": 1.6,
+"free_share": 0.393,
+"score": "Medium"
+},
+{
+"zone": 7092,
+"name": "Pelham Street (Rathdowne Street \u2013 Drummond Street)",
+"lat": -37.803066,
+"lon": 144.968759,
+"bays": 40,
+"avg_free": 28.3,
+"free_share": 0.707,
+"score": "High"
+},
+{
+"zone": 7097,
+"name": "Queensberry Street (Drummond Street \u2013 Lygon Street)",
+"lat": -37.805,
+"lon": 144.967004,
+"bays": 18,
+"avg_free": 4.3,
+"free_share": 0.238,
+"score": "Medium"
+},
+{
+"zone": 7101,
+"name": "Queensberry Street (Bouverie Street \u2013 Leicester Street)",
+"lat": -37.804248,
+"lon": 144.961182,
+"bays": 6,
+"avg_free": 6.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7103,
+"name": "Queensberry Street (Bouverie Street \u2013 Leicester Street)",
+"lat": -37.804335,
+"lon": 144.960847,
+"bays": 9,
+"avg_free": 4.0,
+"free_share": 0.444,
+"score": "High"
+},
+{
+"zone": 7104,
+"name": "Queensberry Street (Lygon Street \u2013 Cardigan Street)",
+"lat": -37.804849,
+"lon": 144.965448,
+"bays": 13,
+"avg_free": 6.9,
+"free_share": 0.527,
+"score": "High"
+},
+{
+"zone": 7107,
+"name": "Queensberry Street (Rathdowne Street \u2013 Drummond Street)",
+"lat": -37.805042,
+"lon": 144.968205,
+"bays": 8,
+"avg_free": 3.1,
+"free_share": 0.393,
+"score": "High"
+},
+{
+"zone": 7108,
+"name": "Rathdowne Street (Pelham Street \u2013 Grattan Street)",
+"lat": -37.802165,
+"lon": 144.969774,
+"bays": 11,
+"avg_free": 1.1,
+"free_share": 0.104,
+"score": "Medium"
+},
+{
+"zone": 7109,
+"name": "Queensberry Street (Swanston Street \u2013 Bouverie Street)",
+"lat": -37.804468,
+"lon": 144.96255,
+"bays": 8,
+"avg_free": 1.7,
+"free_share": 0.214,
+"score": "Medium"
+},
+{
+"zone": 7110,
+"name": "Queensberry Street (Lygon Street \u2013 Cardigan Street)",
+"lat": -37.804807,
+"lon": 144.965613,
+"bays": 8,
+"avg_free": 3.4,
+"free_share": 0.429,
+"score": "High"
+},
+{
+"zone": 7111,
+"name": "Rathdowne Street (Pelham Street \u2013 Grattan Street)",
+"lat": -37.801872,
+"lon": 144.969675,
+"bays": 5,
+"avg_free": 5.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7112,
+"name": "Rathdowne Street (Pelham Street \u2013 Grattan Street)",
+"lat": -37.802293,
+"lon": 144.969603,
+"bays": 7,
+"avg_free": 5.7,
+"free_share": 0.816,
+"score": "High"
+},
+{
+"zone": 7113,
+"name": "Rathdowne Street (Queensberry Street \u2013 Pelham Street)",
+"lat": -37.804028,
+"lon": 144.969304,
+"bays": 13,
+"avg_free": 7.6,
+"free_share": 0.582,
+"score": "High"
+},
+{
+"zone": 7117,
+"name": "Swanston Street (Lincoln Square North \u2013 Grattan Street)",
+"lat": -37.801281,
+"lon": 144.963915,
+"bays": 4,
+"avg_free": 1.0,
+"free_share": 0.25,
+"score": "Medium"
+},
+{
+"zone": 7119,
+"name": "Swanston Street (Lincoln Square South \u2013 Pelham Street)",
+"lat": -37.800783,
+"lon": 144.964,
+"bays": 6,
+"avg_free": 1.7,
+"free_share": 0.286,
+"score": "Medium"
+},
+{
+"zone": 7121,
+"name": "Swanston Street (Lincoln Square South \u2013 Pelham Street)",
+"lat": -37.803499,
+"lon": 144.963437,
+"bays": 18,
+"avg_free": 8.4,
+"free_share": 0.468,
+"score": "High"
+},
+{
+"zone": 7123,
+"name": "Swanston Street (Lincoln Square South \u2013 Pelham Street)",
+"lat": -37.803729,
+"lon": 144.963389,
+"bays": 5,
+"avg_free": 3.7,
+"free_share": 0.743,
+"score": "High"
+},
+{
+"zone": 7127,
+"name": "Victoria Street (Drummond Street \u2013 Lygon Street)",
+"lat": -37.806964,
+"lon": 144.966621,
+"bays": 6,
+"avg_free": 5.0,
+"free_share": 0.833,
+"score": "High"
+},
+{
+"zone": 7128,
+"name": "Victoria Street (Rathdowne Street \u2013 Drummond Street)",
+"lat": -37.807124,
+"lon": 144.96813,
+"bays": 7,
+"avg_free": 7.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7131,
+"name": "Victoria Street (Drummond Street \u2013 Lygon Street)",
+"lat": -37.807163,
+"lon": 144.966693,
+"bays": 4,
+"avg_free": 3.9,
+"free_share": 0.964,
+"score": "High"
+},
+{
+"zone": 7156,
+"name": "Aquitania Way (Docklands Drive \u2013 Caravel Lane)",
+"lat": -37.813808,
+"lon": 144.942154,
+"bays": 7,
+"avg_free": 3.7,
+"free_share": 0.531,
+"score": "High"
+},
+{
+"zone": 7160,
+"name": "Saint Mangos Lane (Docklands Drive \u2013 Caravel Lane)",
+"lat": -37.813914,
+"lon": 144.941168,
+"bays": 4,
+"avg_free": 0.9,
+"free_share": 0.214,
+"score": "Low"
+},
+{
+"zone": 7161,
+"name": "Aurora Lane (Collins Street \u2013 Wurundjeri Way)",
+"lat": -37.820856,
+"lon": 144.951481,
+"bays": 15,
+"avg_free": 6.0,
+"free_share": 0.4,
+"score": "High"
+},
+{
+"zone": 7169,
+"name": "Queensberry Street (Swanston Street \u2013 Bouverie Street)",
+"lat": -37.804418,
+"lon": 144.96245,
+"bays": 6,
+"avg_free": 2.9,
+"free_share": 0.476,
+"score": "High"
+},
+{
+"zone": 7170,
+"name": "Bourke Street (Enterprize Way \u2013 Cumberland Street)",
+"lat": -37.819623,
+"lon": 144.944217,
+"bays": 4,
+"avg_free": 4.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7177,
+"name": "Bouverie Street (Pelham Street \u2013 Lincoln Square North)",
+"lat": -37.801929,
+"lon": 144.962311,
+"bays": 11,
+"avg_free": 8.0,
+"free_share": 0.727,
+"score": "High"
+},
+{
+"zone": 7178,
+"name": "Bourke Street (Enterprize Way \u2013 Cumberland Street)",
+"lat": -37.819789,
+"lon": 144.943963,
+"bays": 4,
+"avg_free": 3.6,
+"free_share": 0.893,
+"score": "High"
+},
+{
+"zone": 7183,
+"name": "Collins Street (Spencer Street \u2013 Batmans Hill Drive)",
+"lat": -37.819957,
+"lon": 144.951393,
+"bays": 6,
+"avg_free": 1.1,
+"free_share": 0.19,
+"score": "Medium"
+},
+{
+"zone": 7190,
+"name": "Collins Street (Swanston Street \u2013 Elizabeth Street)",
+"lat": -37.816015,
+"lon": 144.96466,
+"bays": 12,
+"avg_free": 2.7,
+"free_share": 0.226,
+"score": "Medium"
+},
+{
+"zone": 7191,
+"name": "Docklands Drive (Saint Mangos Lane \u2013 Waterfront Way)",
+"lat": -37.8138,
+"lon": 144.94011,
+"bays": 4,
+"avg_free": 1.3,
+"free_share": 0.321,
+"score": "Medium"
+},
+{
+"zone": 7193,
+"name": "Doepel Way (Docklands Drive \u2013 Newquay Promenade)",
+"lat": -37.814513,
+"lon": 144.939907,
+"bays": 6,
+"avg_free": 1.0,
+"free_share": 0.167,
+"score": "Medium"
+},
+{
+"zone": 7195,
+"name": "Docklands Drive (Harbour Esplanade \u2013 Saint Mangos Lane)",
+"lat": -37.813193,
+"lon": 144.942208,
+"bays": 8,
+"avg_free": 6.0,
+"free_share": 0.75,
+"score": "High"
+},
+{
+"zone": 7197,
+"name": "Geographe Street (Bourke Street \u2013 Keera Way)",
+"lat": -37.820329,
+"lon": 144.945451,
+"bays": 7,
+"avg_free": 5.6,
+"free_share": 0.796,
+"score": "High"
+},
+{
+"zone": 7207,
+"name": "Import Lane (Bourke Street \u2013 Collins Street)",
+"lat": -37.820344,
+"lon": 144.944503,
+"bays": 5,
+"avg_free": 4.0,
+"free_share": 0.8,
+"score": "High"
+},
+{
+"zone": 7220,
+"name": "Pearl River Road (Footscray Road \u2013 Docklands Drive)",
+"lat": -37.813934,
+"lon": 144.93724,
+"bays": 10,
+"avg_free": 5.3,
+"free_share": 0.529,
+"score": "High"
+},
+{
+"zone": 7225,
+"name": "Spencer Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.814474,
+"lon": 144.952012,
+"bays": 8,
+"avg_free": 2.4,
+"free_share": 0.304,
+"score": "High"
+},
+{
+"zone": 7226,
+"name": "Saint Mangos Lane North (Docklands Drive \u2013 nan)",
+"lat": -37.813108,
+"lon": 144.940669,
+"bays": 11,
+"avg_free": 1.6,
+"free_share": 0.143,
+"score": "Medium"
+},
+{
+"zone": 7228,
+"name": "Village Street (Bourke Street \u2013 Collins Street)",
+"lat": -37.819714,
+"lon": 144.949808,
+"bays": 7,
+"avg_free": 4.0,
+"free_share": 0.571,
+"score": "High"
+},
+{
+"zone": 7232,
+"name": "Waterfront Way (Footscray Road \u2013 Docklands Drive)",
+"lat": -37.813423,
+"lon": 144.939303,
+"bays": 8,
+"avg_free": 1.3,
+"free_share": 0.161,
+"score": "Medium"
+},
+{
+"zone": 7243,
+"name": "Clarendon Street (Grey Street \u2013 Albert Street)",
+"lat": -37.810835,
+"lon": 144.983596,
+"bays": 7,
+"avg_free": 4.0,
+"free_share": 0.571,
+"score": "High"
+},
+{
+"zone": 7247,
+"name": "Cathedral Place (Lansdowne Street \u2013 Gisborne Street)",
+"lat": -37.810818,
+"lon": 144.976711,
+"bays": 32,
+"avg_free": 25.6,
+"free_share": 0.799,
+"score": "High"
+},
+{
+"zone": 7250,
+"name": "Clarendon Street (Grey Street \u2013 Albert Street)",
+"lat": -37.811064,
+"lon": 144.983317,
+"bays": 9,
+"avg_free": 0.7,
+"free_share": 0.079,
+"score": "Low"
+},
+{
+"zone": 7251,
+"name": "Eades Street (Victoria Parade \u2013 Albert Street)",
+"lat": -37.809703,
+"lon": 144.981102,
+"bays": 18,
+"avg_free": 17.6,
+"free_share": 0.976,
+"score": "High"
+},
+{
+"zone": 7253,
+"name": "Gisborne Street (Gisborne Street \u2013 Cathedral Place)",
+"lat": -37.81019,
+"lon": 144.975606,
+"bays": 20,
+"avg_free": 8.6,
+"free_share": 0.429,
+"score": "High"
+},
+{
+"zone": 7258,
+"name": "Lansdowne Street (St Andrews Place \u2013 Cathedral Place)",
+"lat": -37.810706,
+"lon": 144.978168,
+"bays": 30,
+"avg_free": 20.1,
+"free_share": 0.671,
+"score": "High"
+},
+{
+"zone": 7261,
+"name": "Pearl River Road (Footscray Road \u2013 Docklands Drive)",
+"lat": -37.812731,
+"lon": 144.936509,
+"bays": 5,
+"avg_free": 1.1,
+"free_share": 0.229,
+"score": "Medium"
+},
+{
+"zone": 7265,
+"name": "Nicholson Street (Spring Street \u2013 Albert Street)",
+"lat": -37.810151,
+"lon": 144.972852,
+"bays": 9,
+"avg_free": 2.9,
+"free_share": 0.317,
+"score": "High"
+},
+{
+"zone": 7269,
+"name": "Parliament Place (St Andrews Place \u2013 Gisborne Street)",
+"lat": -37.811196,
+"lon": 144.975497,
+"bays": 15,
+"avg_free": 11.1,
+"free_share": 0.743,
+"score": "High"
+},
+{
+"zone": 7273,
+"name": "Spring Street (Little Lonsdale Street \u2013 Victoria Parade)",
+"lat": -37.808214,
+"lon": 144.971623,
+"bays": 13,
+"avg_free": 9.7,
+"free_share": 0.747,
+"score": "High"
+},
+{
+"zone": 7276,
+"name": "Clarendon Street (Gipps Street \u2013 Grey Street)",
+"lat": -37.812204,
+"lon": 144.983278,
+"bays": 11,
+"avg_free": 0.3,
+"free_share": 0.026,
+"score": "Low"
+},
+{
+"zone": 7280,
+"name": "St Andrews Place (Lansdowne Street \u2013 MacArthur Street)",
+"lat": -37.811969,
+"lon": 144.976198,
+"bays": 40,
+"avg_free": 27.3,
+"free_share": 0.682,
+"score": "High"
+},
+{
+"zone": 7297,
+"name": "Victoria Parade (Nicholson Street \u2013 Spring Street)",
+"lat": -37.807968,
+"lon": 144.972415,
+"bays": 8,
+"avg_free": 8.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7306,
+"name": "A'Beckett Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.809658,
+"lon": 144.959663,
+"bays": 6,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7307,
+"name": "A'Beckett Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.809699,
+"lon": 144.959523,
+"bays": 4,
+"avg_free": 1.6,
+"free_share": 0.393,
+"score": "Medium"
+},
+{
+"zone": 7308,
+"name": "A'Beckett Street (Swanston Street \u2013 Elizabeth Street)",
+"lat": -37.809128,
+"lon": 144.961253,
+"bays": 7,
+"avg_free": 6.0,
+"free_share": 0.857,
+"score": "High"
+},
+{
+"zone": 7310,
+"name": "A'Beckett Street (Wills Street \u2013 Queen Street)",
+"lat": -37.810228,
+"lon": 144.957251,
+"bays": 11,
+"avg_free": 1.1,
+"free_share": 0.104,
+"score": "Medium"
+},
+{
+"zone": 7311,
+"name": "A'Beckett Street (Wills Street \u2013 Queen Street)",
+"lat": -37.810158,
+"lon": 144.957879,
+"bays": 7,
+"avg_free": 0.3,
+"free_share": 0.041,
+"score": "Low"
+},
+{
+"zone": 7320,
+"name": "Bourke Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.812387,
+"lon": 144.969549,
+"bays": 13,
+"avg_free": 1.1,
+"free_share": 0.088,
+"score": "Low"
+},
+{
+"zone": 7329,
+"name": "Bond Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.818161,
+"lon": 144.962767,
+"bays": 5,
+"avg_free": 2.0,
+"free_share": 0.4,
+"score": "High"
+},
+{
+"zone": 7333,
+"name": "Bourke Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.814574,
+"lon": 144.962339,
+"bays": 4,
+"avg_free": 0.4,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7334,
+"name": "Bourke Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.812339,
+"lon": 144.969652,
+"bays": 7,
+"avg_free": 0.1,
+"free_share": 0.02,
+"score": "Low"
+},
+{
+"zone": 7335,
+"name": "Bourke Street (King Street \u2013 Spencer Street)",
+"lat": -37.816608,
+"lon": 144.954959,
+"bays": 6,
+"avg_free": 3.0,
+"free_share": 0.5,
+"score": "High"
+},
+{
+"zone": 7336,
+"name": "Bourke Street (William Street \u2013 King Street)",
+"lat": -37.816092,
+"lon": 144.956768,
+"bays": 4,
+"avg_free": 1.3,
+"free_share": 0.321,
+"score": "Medium"
+},
+{
+"zone": 7338,
+"name": "Bourke Street (Queen Street \u2013 William Street)",
+"lat": -37.815261,
+"lon": 144.959397,
+"bays": 5,
+"avg_free": 0.1,
+"free_share": 0.029,
+"score": "Low"
+},
+{
+"zone": 7339,
+"name": "Bourke Street (Queen Street \u2013 William Street)",
+"lat": -37.815463,
+"lon": 144.958861,
+"bays": 10,
+"avg_free": 1.6,
+"free_share": 0.157,
+"score": "Medium"
+},
+{
+"zone": 7340,
+"name": "Bourke Street (William Street \u2013 King Street)",
+"lat": -37.816068,
+"lon": 144.956682,
+"bays": 5,
+"avg_free": 1.7,
+"free_share": 0.343,
+"score": "Medium"
+},
+{
+"zone": 7343,
+"name": "Bourke Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.811906,
+"lon": 144.971332,
+"bays": 10,
+"avg_free": 1.7,
+"free_share": 0.171,
+"score": "Medium"
+},
+{
+"zone": 7344,
+"name": "Collins Street (Queen Street \u2013 Market Street)",
+"lat": -37.817164,
+"lon": 144.960651,
+"bays": 4,
+"avg_free": 2.0,
+"free_share": 0.5,
+"score": "High"
+},
+{
+"zone": 7345,
+"name": "Bourke Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.813106,
+"lon": 144.966893,
+"bays": 10,
+"avg_free": 1.1,
+"free_share": 0.114,
+"score": "Medium"
+},
+{
+"zone": 7347,
+"name": "Church Street (Bourke Street \u2013 Little Collins Street)",
+"lat": -37.816328,
+"lon": 144.957171,
+"bays": 4,
+"avg_free": 3.7,
+"free_share": 0.929,
+"score": "High"
+},
+{
+"zone": 7348,
+"name": "Bromby Street (Domain Street \u2013 Adams Street)",
+"lat": -37.834953,
+"lon": 144.976849,
+"bays": 29,
+"avg_free": 20.1,
+"free_share": 0.695,
+"score": "High"
+},
+{
+"zone": 7349,
+"name": "Collins Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.816631,
+"lon": 144.962508,
+"bays": 7,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7350,
+"name": "Church Street (Bourke Street \u2013 Little Collins Street)",
+"lat": -37.816586,
+"lon": 144.957287,
+"bays": 6,
+"avg_free": 5.9,
+"free_share": 0.976,
+"score": "High"
+},
+{
+"zone": 7351,
+"name": "Collins Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.816642,
+"lon": 144.96245,
+"bays": 12,
+"avg_free": 2.7,
+"free_share": 0.226,
+"score": "Medium"
+},
+{
+"zone": 7354,
+"name": "Collins Street (King Street \u2013 Spencer Street)",
+"lat": -37.81861,
+"lon": 144.955829,
+"bays": 8,
+"avg_free": 3.4,
+"free_share": 0.429,
+"score": "High"
+},
+{
+"zone": 7355,
+"name": "Collins Street (Queen Street \u2013 Market Street)",
+"lat": -37.817164,
+"lon": 144.960869,
+"bays": 11,
+"avg_free": 6.0,
+"free_share": 0.545,
+"score": "High"
+},
+{
+"zone": 7357,
+"name": "Collins Street (King Street \u2013 Spencer Street)",
+"lat": -37.818516,
+"lon": 144.956146,
+"bays": 5,
+"avg_free": 2.0,
+"free_share": 0.4,
+"score": "High"
+},
+{
+"zone": 7360,
+"name": "Collins Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.813746,
+"lon": 144.972217,
+"bays": 5,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7362,
+"name": "Collins Street (William Street \u2013 King Street)",
+"lat": -37.817945,
+"lon": 144.958038,
+"bays": 14,
+"avg_free": 8.4,
+"free_share": 0.602,
+"score": "High"
+},
+{
+"zone": 7365,
+"name": "Collins Street (William Street \u2013 King Street)",
+"lat": -37.818019,
+"lon": 144.957762,
+"bays": 10,
+"avg_free": 7.0,
+"free_share": 0.7,
+"score": "High"
+},
+{
+"zone": 7366,
+"name": "Collins Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.813737,
+"lon": 144.9725,
+"bays": 11,
+"avg_free": 2.1,
+"free_share": 0.195,
+"score": "Medium"
+},
+{
+"zone": 7377,
+"name": "Downie Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.820092,
+"lon": 144.955672,
+"bays": 4,
+"avg_free": 3.4,
+"free_share": 0.857,
+"score": "High"
+},
+{
+"zone": 7378,
+"name": "Elizabeth Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.814744,
+"lon": 144.96343,
+"bays": 7,
+"avg_free": 1.6,
+"free_share": 0.224,
+"score": "Medium"
+},
+{
+"zone": 7384,
+"name": "Elizabeth Street (A'Beckett Street \u2013 Franklin Street)",
+"lat": -37.808725,
+"lon": 144.960591,
+"bays": 9,
+"avg_free": 1.1,
+"free_share": 0.127,
+"score": "Medium"
+},
+{
+"zone": 7388,
+"name": "Elizabeth Street (Little La Trobe Street \u2013 A'Beckett Street)",
+"lat": -37.80987,
+"lon": 144.961047,
+"bays": 7,
+"avg_free": 0.4,
+"free_share": 0.061,
+"score": "Low"
+},
+{
+"zone": 7391,
+"name": "Elizabeth Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.811734,
+"lon": 144.961983,
+"bays": 5,
+"avg_free": 1.0,
+"free_share": 0.2,
+"score": "Medium"
+},
+{
+"zone": 7400,
+"name": "Exhibition Street (Collins Street \u2013 Little Collins Street)",
+"lat": -37.813477,
+"lon": 144.971193,
+"bays": 5,
+"avg_free": 4.9,
+"free_share": 0.971,
+"score": "High"
+},
+{
+"zone": 7402,
+"name": "Exhibition Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.814529,
+"lon": 144.97175,
+"bays": 5,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7403,
+"name": "Elizabeth Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.811924,
+"lon": 144.961987,
+"bays": 5,
+"avg_free": 1.0,
+"free_share": 0.2,
+"score": "Medium"
+},
+{
+"zone": 7404,
+"name": "Elizabeth Street (Franklin Street \u2013 Therry Street)",
+"lat": -37.80744,
+"lon": 144.960134,
+"bays": 4,
+"avg_free": 1.0,
+"free_share": 0.25,
+"score": "Medium"
+},
+{
+"zone": 7406,
+"name": "Exhibition Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.808632,
+"lon": 144.968987,
+"bays": 17,
+"avg_free": 1.7,
+"free_share": 0.101,
+"score": "Medium"
+},
+{
+"zone": 7408,
+"name": "Exhibition Street (La Trobe Street \u2013 Victoria Street)",
+"lat": -37.807633,
+"lon": 144.968471,
+"bays": 10,
+"avg_free": 3.6,
+"free_share": 0.357,
+"score": "High"
+},
+{
+"zone": 7411,
+"name": "Exhibition Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.81251,
+"lon": 144.970848,
+"bays": 4,
+"avg_free": 2.4,
+"free_share": 0.607,
+"score": "High"
+},
+{
+"zone": 7417,
+"name": "Flinders Lane (King Street \u2013 Spencer Street)",
+"lat": -37.819728,
+"lon": 144.955933,
+"bays": 8,
+"avg_free": 2.0,
+"free_share": 0.25,
+"score": "High"
+},
+{
+"zone": 7418,
+"name": "Flinders Lane (King Street \u2013 Spencer Street)",
+"lat": -37.81987,
+"lon": 144.95551,
+"bays": 7,
+"avg_free": 4.3,
+"free_share": 0.612,
+"score": "High"
+},
+{
+"zone": 7419,
+"name": "Flinders Lane (William Street \u2013 King Street)",
+"lat": -37.818946,
+"lon": 144.958584,
+"bays": 7,
+"avg_free": 4.7,
+"free_share": 0.673,
+"score": "High"
+},
+{
+"zone": 7423,
+"name": "Flinders Lane (Spring Street \u2013 Exhibition Street)",
+"lat": -37.814612,
+"lon": 144.973397,
+"bays": 4,
+"avg_free": 1.7,
+"free_share": 0.429,
+"score": "Medium"
+},
+{
+"zone": 7430,
+"name": "Elizabeth Street (Little La Trobe Street \u2013 A'Beckett Street)",
+"lat": -37.809477,
+"lon": 144.961072,
+"bays": 4,
+"avg_free": 0.1,
+"free_share": 0.036,
+"score": "Low"
+},
+{
+"zone": 7433,
+"name": "Flinders Street (King Street \u2013 Spencer Street)",
+"lat": -37.820634,
+"lon": 144.956129,
+"bays": 7,
+"avg_free": 0.9,
+"free_share": 0.122,
+"score": "Low"
+},
+{
+"zone": 7434,
+"name": "Flinders Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.818621,
+"lon": 144.963452,
+"bays": 4,
+"avg_free": 2.1,
+"free_share": 0.536,
+"score": "High"
+},
+{
+"zone": 7436,
+"name": "Flinders Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.816341,
+"lon": 144.971583,
+"bays": 7,
+"avg_free": 1.0,
+"free_share": 0.143,
+"score": "Medium"
+},
+{
+"zone": 7438,
+"name": "Flinders Street (King Street \u2013 Spencer Street)",
+"lat": -37.820723,
+"lon": 144.956674,
+"bays": 10,
+"avg_free": 1.9,
+"free_share": 0.186,
+"score": "Medium"
+},
+{
+"zone": 7445,
+"name": "Francis Street (King Street \u2013 Spencer Street)",
+"lat": -37.818036,
+"lon": 144.955823,
+"bays": 6,
+"avg_free": 3.4,
+"free_share": 0.571,
+"score": "High"
+},
+{
+"zone": 7448,
+"name": "Franklin Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.808641,
+"lon": 144.958746,
+"bays": 27,
+"avg_free": 1.0,
+"free_share": 0.037,
+"score": "Low"
+},
+{
+"zone": 7451,
+"name": "Flinders Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.817052,
+"lon": 144.968506,
+"bays": 7,
+"avg_free": 1.3,
+"free_share": 0.184,
+"score": "Medium"
+},
+{
+"zone": 7454,
+"name": "Flinders Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.815784,
+"lon": 144.972813,
+"bays": 5,
+"avg_free": 3.9,
+"free_share": 0.771,
+"score": "High"
+},
+{
+"zone": 7455,
+"name": "Flinders Lane (Market Street \u2013 William Street)",
+"lat": -37.818409,
+"lon": 144.960211,
+"bays": 5,
+"avg_free": 3.4,
+"free_share": 0.686,
+"score": "High"
+},
+{
+"zone": 7457,
+"name": "Flinders Lane (Market Street \u2013 William Street)",
+"lat": -37.818534,
+"lon": 144.96009,
+"bays": 4,
+"avg_free": 2.4,
+"free_share": 0.607,
+"score": "High"
+},
+{
+"zone": 7458,
+"name": "Flinders Lane (Queen Street \u2013 Market Street)",
+"lat": -37.818092,
+"lon": 144.961497,
+"bays": 4,
+"avg_free": 0.9,
+"free_share": 0.214,
+"score": "Low"
+},
+{
+"zone": 7461,
+"name": "Elizabeth Street (A'Beckett Street \u2013 Franklin Street)",
+"lat": -37.808796,
+"lon": 144.960644,
+"bays": 7,
+"avg_free": 1.4,
+"free_share": 0.204,
+"score": "Medium"
+},
+{
+"zone": 7462,
+"name": "Anthony Street (Franklin Street \u2013 A'Beckett Street)",
+"lat": -37.809191,
+"lon": 144.959083,
+"bays": 6,
+"avg_free": 1.3,
+"free_share": 0.214,
+"score": "Medium"
+},
+{
+"zone": 7474,
+"name": "King Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.818977,
+"lon": 144.956933,
+"bays": 16,
+"avg_free": 10.6,
+"free_share": 0.661,
+"score": "High"
+},
+{
+"zone": 7476,
+"name": "King Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.818664,
+"lon": 144.956773,
+"bays": 4,
+"avg_free": 3.9,
+"free_share": 0.964,
+"score": "High"
+},
+{
+"zone": 7485,
+"name": "King Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.816917,
+"lon": 144.955981,
+"bays": 13,
+"avg_free": 6.4,
+"free_share": 0.495,
+"score": "High"
+},
+{
+"zone": 7486,
+"name": "King Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.816972,
+"lon": 144.955972,
+"bays": 5,
+"avg_free": 2.1,
+"free_share": 0.429,
+"score": "High"
+},
+{
+"zone": 7493,
+"name": "La Trobe Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.810782,
+"lon": 144.959817,
+"bays": 7,
+"avg_free": 0.3,
+"free_share": 0.041,
+"score": "Low"
+},
+{
+"zone": 7494,
+"name": "La Trobe Street (Swanston Street \u2013 Elizabeth Street)",
+"lat": -37.809994,
+"lon": 144.962479,
+"bays": 6,
+"avg_free": 1.0,
+"free_share": 0.167,
+"score": "Medium"
+},
+{
+"zone": 7495,
+"name": "La Trobe Street (Swanston Street \u2013 Elizabeth Street)",
+"lat": -37.810034,
+"lon": 144.962578,
+"bays": 4,
+"avg_free": 0.1,
+"free_share": 0.036,
+"score": "Low"
+},
+{
+"zone": 7497,
+"name": "La Trobe Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.808511,
+"lon": 144.967532,
+"bays": 4,
+"avg_free": 0.6,
+"free_share": 0.143,
+"score": "Low"
+},
+{
+"zone": 7498,
+"name": "La Trobe Street (William Street \u2013 King Street)",
+"lat": -37.81216,
+"lon": 144.95475,
+"bays": 9,
+"avg_free": 4.1,
+"free_share": 0.46,
+"score": "High"
+},
+{
+"zone": 7502,
+"name": "La Trobe Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.809106,
+"lon": 144.96574,
+"bays": 4,
+"avg_free": 0.4,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7503,
+"name": "La Trobe Street (Queen Street \u2013 Wills Street)",
+"lat": -37.811297,
+"lon": 144.957958,
+"bays": 5,
+"avg_free": 0.4,
+"free_share": 0.086,
+"score": "Low"
+},
+{
+"zone": 7506,
+"name": "Little Collins Street (King Street \u2013 Spencer Street)",
+"lat": -37.81771,
+"lon": 144.954966,
+"bays": 9,
+"avg_free": 6.1,
+"free_share": 0.683,
+"score": "High"
+},
+{
+"zone": 7507,
+"name": "Little Collins Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.814032,
+"lon": 144.967764,
+"bays": 7,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7509,
+"name": "La Trobe Street (Victoria Street \u2013 Exhibition Street)",
+"lat": -37.807884,
+"lon": 144.969917,
+"bays": 4,
+"avg_free": 0.7,
+"free_share": 0.179,
+"score": "Low"
+},
+{
+"zone": 7512,
+"name": "Little Collins Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.812525,
+"lon": 144.972897,
+"bays": 5,
+"avg_free": 1.4,
+"free_share": 0.286,
+"score": "Medium"
+},
+{
+"zone": 7525,
+"name": "Little Collins Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.815665,
+"lon": 144.962223,
+"bays": 10,
+"avg_free": 1.3,
+"free_share": 0.129,
+"score": "Medium"
+},
+{
+"zone": 7527,
+"name": "Little Collins Street (Queen Street \u2013 William Street)",
+"lat": -37.81632,
+"lon": 144.959861,
+"bays": 7,
+"avg_free": 1.4,
+"free_share": 0.204,
+"score": "Medium"
+},
+{
+"zone": 7528,
+"name": "Little Collins Street (Queen Street \u2013 William Street)",
+"lat": -37.81639,
+"lon": 144.959693,
+"bays": 7,
+"avg_free": 1.1,
+"free_share": 0.163,
+"score": "Medium"
+},
+{
+"zone": 7529,
+"name": "Little Collins Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.813448,
+"lon": 144.969707,
+"bays": 7,
+"avg_free": 0.9,
+"free_share": 0.122,
+"score": "Low"
+},
+{
+"zone": 7532,
+"name": "Little Collins Street (William Street \u2013 King Street)",
+"lat": -37.816846,
+"lon": 144.957908,
+"bays": 9,
+"avg_free": 7.0,
+"free_share": 0.778,
+"score": "High"
+},
+{
+"zone": 7533,
+"name": "Little Collins Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.812871,
+"lon": 144.971715,
+"bays": 4,
+"avg_free": 0.6,
+"free_share": 0.143,
+"score": "Low"
+},
+{
+"zone": 7534,
+"name": "Little Collins Street (William Street \u2013 King Street)",
+"lat": -37.816938,
+"lon": 144.957649,
+"bays": 12,
+"avg_free": 5.3,
+"free_share": 0.44,
+"score": "High"
+},
+{
+"zone": 7537,
+"name": "Little Collins Street (King Street \u2013 Spencer Street)",
+"lat": -37.81767,
+"lon": 144.955207,
+"bays": 20,
+"avg_free": 6.9,
+"free_share": 0.343,
+"score": "High"
+},
+{
+"zone": 7538,
+"name": "Little Bourke Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.810743,
+"lon": 144.97132,
+"bays": 10,
+"avg_free": 3.1,
+"free_share": 0.314,
+"score": "High"
+},
+{
+"zone": 7541,
+"name": "Little Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.809031,
+"lon": 144.969638,
+"bays": 5,
+"avg_free": 1.4,
+"free_share": 0.286,
+"score": "Medium"
+},
+{
+"zone": 7542,
+"name": "Little Lonsdale Street (Queen Street \u2013 William Street)",
+"lat": -37.812326,
+"lon": 144.958242,
+"bays": 17,
+"avg_free": 8.7,
+"free_share": 0.513,
+"score": "High"
+},
+{
+"zone": 7545,
+"name": "Little Lonsdale Street (Queen Street \u2013 William Street)",
+"lat": -37.812403,
+"lon": 144.957945,
+"bays": 4,
+"avg_free": 2.1,
+"free_share": 0.536,
+"score": "High"
+},
+{
+"zone": 7547,
+"name": "Little Lonsdale Street (William Street \u2013 King Street)",
+"lat": -37.813185,
+"lon": 144.955309,
+"bays": 19,
+"avg_free": 15.7,
+"free_share": 0.827,
+"score": "High"
+},
+{
+"zone": 7548,
+"name": "Little Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.808817,
+"lon": 144.970375,
+"bays": 10,
+"avg_free": 9.1,
+"free_share": 0.914,
+"score": "High"
+},
+{
+"zone": 7551,
+"name": "Lonsdale Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.812634,
+"lon": 144.96105,
+"bays": 27,
+"avg_free": 4.9,
+"free_share": 0.18,
+"score": "Medium"
+},
+{
+"zone": 7552,
+"name": "Little Lonsdale Street (William Street \u2013 King Street)",
+"lat": -37.812971,
+"lon": 144.956145,
+"bays": 7,
+"avg_free": 5.1,
+"free_share": 0.735,
+"score": "High"
+},
+{
+"zone": 7556,
+"name": "Lonsdale Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.810396,
+"lon": 144.968703,
+"bays": 26,
+"avg_free": 1.4,
+"free_share": 0.055,
+"score": "Low"
+},
+{
+"zone": 7557,
+"name": "Lonsdale Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.810953,
+"lon": 144.966474,
+"bays": 6,
+"avg_free": 1.3,
+"free_share": 0.214,
+"score": "Medium"
+},
+{
+"zone": 7558,
+"name": "Lonsdale Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.810624,
+"lon": 144.968266,
+"bays": 7,
+"avg_free": 1.6,
+"free_share": 0.224,
+"score": "Medium"
+},
+{
+"zone": 7559,
+"name": "Little Bourke Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.810762,
+"lon": 144.971169,
+"bays": 7,
+"avg_free": 2.3,
+"free_share": 0.327,
+"score": "High"
+},
+{
+"zone": 7560,
+"name": "Little Lonsdale Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.809291,
+"lon": 144.968704,
+"bays": 4,
+"avg_free": 0.4,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7561,
+"name": "Little Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.808734,
+"lon": 144.970489,
+"bays": 8,
+"avg_free": 4.3,
+"free_share": 0.536,
+"score": "High"
+},
+{
+"zone": 7563,
+"name": "Little Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.808734,
+"lon": 144.97049,
+"bays": 8,
+"avg_free": 5.6,
+"free_share": 0.696,
+"score": "High"
+},
+{
+"zone": 7568,
+"name": "Lonsdale Street (Exhibition Street \u2013 Russell Street)",
+"lat": -37.810717,
+"lon": 144.967949,
+"bays": 5,
+"avg_free": 0.1,
+"free_share": 0.029,
+"score": "Low"
+},
+{
+"zone": 7569,
+"name": "Lonsdale Street (Russell Street \u2013 Swanston Street)",
+"lat": -37.811144,
+"lon": 144.966463,
+"bays": 7,
+"avg_free": 1.1,
+"free_share": 0.163,
+"score": "Medium"
+},
+{
+"zone": 7570,
+"name": "Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.809761,
+"lon": 144.97087,
+"bays": 35,
+"avg_free": 8.0,
+"free_share": 0.229,
+"score": "Medium"
+},
+{
+"zone": 7572,
+"name": "Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.809927,
+"lon": 144.970647,
+"bays": 4,
+"avg_free": 1.4,
+"free_share": 0.357,
+"score": "Medium"
+},
+{
+"zone": 7576,
+"name": "King Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.812794,
+"lon": 144.95407,
+"bays": 4,
+"avg_free": 0.7,
+"free_share": 0.179,
+"score": "Low"
+},
+{
+"zone": 7580,
+"name": "MacKenzie Street (Victoria Street \u2013 Russell Street)",
+"lat": -37.80756,
+"lon": 144.966708,
+"bays": 19,
+"avg_free": 9.4,
+"free_share": 0.496,
+"score": "High"
+},
+{
+"zone": 7584,
+"name": "Moubray Street (St Kilda Road \u2013 Punt Road)",
+"lat": -37.848197,
+"lon": 144.983172,
+"bays": 11,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7586,
+"name": "Moubray Street (St Kilda Road \u2013 Punt Road)",
+"lat": -37.848123,
+"lon": 144.983473,
+"bays": 17,
+"avg_free": 0.9,
+"free_share": 0.05,
+"score": "Low"
+},
+{
+"zone": 7589,
+"name": "Pelham Street (Berkeley Street \u2013 Elizabeth Street)",
+"lat": -37.801872,
+"lon": 144.958073,
+"bays": 11,
+"avg_free": 10.0,
+"free_share": 0.909,
+"score": "High"
+},
+{
+"zone": 7592,
+"name": "Queen Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.81829,
+"lon": 144.962192,
+"bays": 20,
+"avg_free": 13.3,
+"free_share": 0.664,
+"score": "High"
+},
+{
+"zone": 7594,
+"name": "Queen Street (Bourke Street \u2013 Little Bourke Street)",
+"lat": -37.814432,
+"lon": 144.960436,
+"bays": 11,
+"avg_free": 6.3,
+"free_share": 0.571,
+"score": "High"
+},
+{
+"zone": 7595,
+"name": "Queen Street (Collins Street \u2013 Little Collins Street)",
+"lat": -37.816313,
+"lon": 144.961302,
+"bays": 11,
+"avg_free": 0.6,
+"free_share": 0.052,
+"score": "Low"
+},
+{
+"zone": 7596,
+"name": "Queen Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.817281,
+"lon": 144.961748,
+"bays": 9,
+"avg_free": 0.7,
+"free_share": 0.079,
+"score": "Low"
+},
+{
+"zone": 7601,
+"name": "Queen Street (Franklin Street \u2013 Therry Street)",
+"lat": -37.80847,
+"lon": 144.957999,
+"bays": 4,
+"avg_free": 1.0,
+"free_share": 0.25,
+"score": "Medium"
+},
+{
+"zone": 7603,
+"name": "Lonsdale Street (Swanston Street \u2013 Elizabeth Street)",
+"lat": -37.812025,
+"lon": 144.96281,
+"bays": 5,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7604,
+"name": "Queen Street (La Trobe Street \u2013 A'Beckett Street)",
+"lat": -37.810599,
+"lon": 144.958652,
+"bays": 9,
+"avg_free": 2.4,
+"free_share": 0.27,
+"score": "High"
+},
+{
+"zone": 7605,
+"name": "Queen Street (Little Bourke Street \u2013 Lonsdale Street)",
+"lat": -37.813631,
+"lon": 144.96007,
+"bays": 16,
+"avg_free": 2.9,
+"free_share": 0.179,
+"score": "Medium"
+},
+{
+"zone": 7610,
+"name": "Queen Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.812452,
+"lon": 144.959564,
+"bays": 9,
+"avg_free": 0.1,
+"free_share": 0.016,
+"score": "Low"
+},
+{
+"zone": 7612,
+"name": "Queen Street (Little Bourke Street \u2013 Lonsdale Street)",
+"lat": -37.813467,
+"lon": 144.960122,
+"bays": 5,
+"avg_free": 2.1,
+"free_share": 0.429,
+"score": "High"
+},
+{
+"zone": 7614,
+"name": "Queen Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.811725,
+"lon": 144.959232,
+"bays": 15,
+"avg_free": 0.9,
+"free_share": 0.057,
+"score": "Low"
+},
+{
+"zone": 7621,
+"name": "King Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.813798,
+"lon": 144.954571,
+"bays": 11,
+"avg_free": 5.1,
+"free_share": 0.468,
+"score": "High"
+},
+{
+"zone": 7622,
+"name": "King Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.814096,
+"lon": 144.954675,
+"bays": 4,
+"avg_free": 1.7,
+"free_share": 0.429,
+"score": "Medium"
+},
+{
+"zone": 7624,
+"name": "King Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.813065,
+"lon": 144.954205,
+"bays": 15,
+"avg_free": 4.6,
+"free_share": 0.305,
+"score": "High"
+},
+{
+"zone": 7627,
+"name": "Russell Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.809304,
+"lon": 144.966621,
+"bays": 4,
+"avg_free": 0.4,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7628,
+"name": "Russell Street (Collins Street \u2013 Little Collins Street)",
+"lat": -37.814163,
+"lon": 144.968848,
+"bays": 5,
+"avg_free": 0.3,
+"free_share": 0.057,
+"score": "Low"
+},
+{
+"zone": 7630,
+"name": "Russell Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.81606,
+"lon": 144.969581,
+"bays": 7,
+"avg_free": 0.1,
+"free_share": 0.02,
+"score": "Low"
+},
+{
+"zone": 7631,
+"name": "Russell Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.816309,
+"lon": 144.96964,
+"bays": 5,
+"avg_free": 2.7,
+"free_share": 0.543,
+"score": "High"
+},
+{
+"zone": 7634,
+"name": "Russell Street (Little Bourke Street \u2013 Lonsdale Street)",
+"lat": -37.811437,
+"lon": 144.967598,
+"bays": 4,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7635,
+"name": "Russell Street (Little Lonsdale Street \u2013 La Trobe Street)",
+"lat": -37.809308,
+"lon": 144.966622,
+"bays": 4,
+"avg_free": 1.1,
+"free_share": 0.286,
+"score": "Medium"
+},
+{
+"zone": 7636,
+"name": "Russell Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.81531,
+"lon": 144.969193,
+"bays": 8,
+"avg_free": 0.9,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7638,
+"name": "Russell Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.813418,
+"lon": 144.96838,
+"bays": 17,
+"avg_free": 1.7,
+"free_share": 0.101,
+"score": "Medium"
+},
+{
+"zone": 7639,
+"name": "Russell Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.810277,
+"lon": 144.966978,
+"bays": 18,
+"avg_free": 0.7,
+"free_share": 0.04,
+"score": "Low"
+},
+{
+"zone": 7640,
+"name": "Russell Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.810385,
+"lon": 144.966959,
+"bays": 8,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7641,
+"name": "Russell Street (La Trobe Street \u2013 MacKenzie Street)",
+"lat": -37.808071,
+"lon": 144.966056,
+"bays": 6,
+"avg_free": 1.1,
+"free_share": 0.19,
+"score": "Medium"
+},
+{
+"zone": 7644,
+"name": "Spencer Street (Little Collins Street \u2013 Bourke Street)",
+"lat": -37.817526,
+"lon": 144.953573,
+"bays": 4,
+"avg_free": 2.9,
+"free_share": 0.714,
+"score": "High"
+},
+{
+"zone": 7645,
+"name": "Spring Street (Collins Street \u2013 Little Collins Street)",
+"lat": -37.812654,
+"lon": 144.973669,
+"bays": 8,
+"avg_free": 0.9,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7647,
+"name": "Spring Street (Little Bourke Street \u2013 Lonsdale Street)",
+"lat": -37.809915,
+"lon": 144.972283,
+"bays": 14,
+"avg_free": 0.7,
+"free_share": 0.051,
+"score": "Low"
+},
+{
+"zone": 7649,
+"name": "Spring Street (Lonsdale Street \u2013 Little Lonsdale Street)",
+"lat": -37.808788,
+"lon": 144.971814,
+"bays": 23,
+"avg_free": 15.7,
+"free_share": 0.683,
+"score": "High"
+},
+{
+"zone": 7659,
+"name": "Spring Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.814046,
+"lon": 144.974189,
+"bays": 6,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7673,
+"name": "Therry Street (Victoria Street \u2013 Elizabeth Street)",
+"lat": -37.806864,
+"lon": 144.960689,
+"bays": 5,
+"avg_free": 1.0,
+"free_share": 0.2,
+"score": "Medium"
+},
+{
+"zone": 7686,
+"name": "Spencer Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.819537,
+"lon": 144.954498,
+"bays": 4,
+"avg_free": 2.6,
+"free_share": 0.643,
+"score": "High"
+},
+{
+"zone": 7687,
+"name": "Victoria Street (La Trobe Street \u2013 Rathdowne Street)",
+"lat": -37.807298,
+"lon": 144.969732,
+"bays": 13,
+"avg_free": 7.6,
+"free_share": 0.582,
+"score": "High"
+},
+{
+"zone": 7689,
+"name": "Queen Street (Bourke Street \u2013 Little Bourke Street)",
+"lat": -37.814394,
+"lon": 144.960545,
+"bays": 4,
+"avg_free": 1.3,
+"free_share": 0.321,
+"score": "Medium"
+},
+{
+"zone": 7691,
+"name": "Victoria Street (La Trobe Street \u2013 Rathdowne Street)",
+"lat": -37.807471,
+"lon": 144.969621,
+"bays": 10,
+"avg_free": 8.1,
+"free_share": 0.814,
+"score": "High"
+},
+{
+"zone": 7693,
+"name": "Queen Street (La Trobe Street \u2013 A'Beckett Street)",
+"lat": -37.810382,
+"lon": 144.958637,
+"bays": 9,
+"avg_free": 1.1,
+"free_share": 0.127,
+"score": "Medium"
+},
+{
+"zone": 7695,
+"name": "William Street (Flinders Lane \u2013 Collins Street)",
+"lat": -37.818076,
+"lon": 144.959355,
+"bays": 4,
+"avg_free": 2.6,
+"free_share": 0.643,
+"score": "High"
+},
+{
+"zone": 7697,
+"name": "Queen Street (Flinders Street \u2013 Flinders Lane)",
+"lat": -37.818148,
+"lon": 144.962271,
+"bays": 4,
+"avg_free": 3.0,
+"free_share": 0.75,
+"score": "High"
+},
+{
+"zone": 7705,
+"name": "Wills Street (La Trobe Street \u2013 A'Beckett Street)",
+"lat": -37.811099,
+"lon": 144.957462,
+"bays": 7,
+"avg_free": 1.3,
+"free_share": 0.184,
+"score": "Medium"
+},
+{
+"zone": 7725,
+"name": "Errol Street (Victoria Street \u2013 Queensberry Street)",
+"lat": -37.80408,
+"lon": 144.949432,
+"bays": 18,
+"avg_free": 1.0,
+"free_share": 0.056,
+"score": "Low"
+},
+{
+"zone": 7733,
+"name": "Errol Street (Victoria Street \u2013 Queensberry Street)",
+"lat": -37.804493,
+"lon": 144.949465,
+"bays": 4,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7763,
+"name": "Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.809652,
+"lon": 144.970905,
+"bays": 6,
+"avg_free": 0.9,
+"free_share": 0.143,
+"score": "Low"
+},
+{
+"zone": 7764,
+"name": "Lonsdale Street (Spring Street \u2013 Exhibition Street)",
+"lat": -37.809717,
+"lon": 144.970684,
+"bays": 4,
+"avg_free": 1.7,
+"free_share": 0.429,
+"score": "Medium"
+},
+{
+"zone": 7769,
+"name": "Lonsdale Street (Elizabeth Street \u2013 Queen Street)",
+"lat": -37.812416,
+"lon": 144.961464,
+"bays": 5,
+"avg_free": 1.3,
+"free_share": 0.257,
+"score": "Medium"
+},
+{
+"zone": 7791,
+"name": "Gresham Street (Bourke Street \u2013 Little Bourke Street)",
+"lat": -37.815655,
+"lon": 144.956525,
+"bays": 6,
+"avg_free": 5.0,
+"free_share": 0.833,
+"score": "High"
+},
+{
+"zone": 7801,
+"name": "City Road (Clarke Street \u2013 Clarendon Street)",
+"lat": -37.827076,
+"lon": 144.958894,
+"bays": 4,
+"avg_free": 1.0,
+"free_share": 0.25,
+"score": "Medium"
+},
+{
+"zone": 7810,
+"name": "City Road (Clarke Street \u2013 Clarendon Street)",
+"lat": -37.827037,
+"lon": 144.958688,
+"bays": 6,
+"avg_free": 4.4,
+"free_share": 0.738,
+"score": "High"
+},
+{
+"zone": 7818,
+"name": "City Road (Balston Street \u2013 Kings Way)",
+"lat": -37.82485,
+"lon": 144.961322,
+"bays": 21,
+"avg_free": 11.0,
+"free_share": 0.524,
+"score": "High"
+},
+{
+"zone": 7819,
+"name": "City Road (Balston Street \u2013 Kings Way)",
+"lat": -37.824802,
+"lon": 144.96144,
+"bays": 9,
+"avg_free": 4.7,
+"free_share": 0.524,
+"score": "High"
+},
+{
+"zone": 7820,
+"name": "City Road (Kings Way \u2013 Clarke Street)",
+"lat": -37.826585,
+"lon": 144.959471,
+"bays": 8,
+"avg_free": 0.9,
+"free_share": 0.107,
+"score": "Low"
+},
+{
+"zone": 7821,
+"name": "City Road (Kings Way \u2013 Clarke Street)",
+"lat": -37.826403,
+"lon": 144.959428,
+"bays": 7,
+"avg_free": 3.4,
+"free_share": 0.49,
+"score": "High"
+},
+{
+"zone": 7822,
+"name": "City Road (Southgate Avenue \u2013 Southbank Boulevard)",
+"lat": -37.822294,
+"lon": 144.965068,
+"bays": 7,
+"avg_free": 2.3,
+"free_share": 0.327,
+"score": "High"
+},
+{
+"zone": 7823,
+"name": "City Road (Southgate Avenue \u2013 Sturt Street)",
+"lat": -37.821432,
+"lon": 144.966409,
+"bays": 5,
+"avg_free": 1.0,
+"free_share": 0.2,
+"score": "Medium"
+},
+{
+"zone": 7825,
+"name": "Clarke Street (Haig Street \u2013 City Road)",
+"lat": -37.826268,
+"lon": 144.958903,
+"bays": 7,
+"avg_free": 2.6,
+"free_share": 0.367,
+"score": "High"
+},
+{
+"zone": 7831,
+"name": "Coventry Street (Dodds Street \u2013 Sturt Street)",
+"lat": -37.830176,
+"lon": 144.966192,
+"bays": 25,
+"avg_free": 17.3,
+"free_share": 0.691,
+"score": "High"
+},
+{
+"zone": 7833,
+"name": "Coventry Street (Wells Street \u2013 Dodds Street)",
+"lat": -37.829604,
+"lon": 144.968175,
+"bays": 28,
+"avg_free": 20.4,
+"free_share": 0.73,
+"score": "High"
+},
+{
+"zone": 7848,
+"name": "Haig Street (Clarendon Street \u2013 Westgate Freeway)",
+"lat": -37.827471,
+"lon": 144.956649,
+"bays": 45,
+"avg_free": 10.4,
+"free_share": 0.232,
+"score": "Medium"
+},
+{
+"zone": 7850,
+"name": "Haig Street (Clarendon Street \u2013 Clarke Street)",
+"lat": -37.822503,
+"lon": 144.959899,
+"bays": 10,
+"avg_free": 5.4,
+"free_share": 0.543,
+"score": "High"
+},
+{
+"zone": 7868,
+"name": "Queens Bridge Street (Power Street \u2013 Kings Way)",
+"lat": -37.82425,
+"lon": 144.960606,
+"bays": 6,
+"avg_free": 1.0,
+"free_share": 0.167,
+"score": "Medium"
+},
+{
+"zone": 7871,
+"name": "Queens Bridge Street (Power Street \u2013 Kings Way)",
+"lat": -37.824499,
+"lon": 144.960436,
+"bays": 26,
+"avg_free": 2.3,
+"free_share": 0.088,
+"score": "Low"
+},
+{
+"zone": 7872,
+"name": "Southgate Avenue (City Road \u2013 Riverside Avenue)",
+"lat": -37.820441,
+"lon": 144.967613,
+"bays": 6,
+"avg_free": 0.0,
+"free_share": 0.0,
+"score": "Low"
+},
+{
+"zone": 7890,
+"name": "Sturt Street (Southbank Boulevard \u2013 Grant Street)",
+"lat": -37.825133,
+"lon": 144.966829,
+"bays": 27,
+"avg_free": 7.9,
+"free_share": 0.291,
+"score": "High"
+},
+{
+"zone": 7893,
+"name": "Sturt Street (Grant Street \u2013 Miles Street)",
+"lat": -37.826556,
+"lon": 144.966415,
+"bays": 21,
+"avg_free": 16.1,
+"free_share": 0.769,
+"score": "High"
+},
+{
+"zone": 7910,
+"name": "Commercial Road (St Kilda Road \u2013 Punt Road)",
+"lat": -37.845094,
+"lon": 144.98028,
+"bays": 16,
+"avg_free": 0.6,
+"free_share": 0.036,
+"score": "Low"
+},
+{
+"zone": 7918,
+"name": "Batman Street (Spencer Street \u2013 King Street)",
+"lat": -37.810686,
+"lon": 144.951722,
+"bays": 73,
+"avg_free": 48.6,
+"free_share": 0.665,
+"score": "High"
+},
+{
+"zone": 7927,
+"name": "Dudley Street (King Street \u2013 Spencer Street)",
+"lat": -37.8096,
+"lon": 144.951289,
+"bays": 12,
+"avg_free": 7.0,
+"free_share": 0.583,
+"score": "High"
+},
+{
+"zone": 7932,
+"name": "Dudley Street (William Street \u2013 Milton Street)",
+"lat": -37.808895,
+"lon": 144.953585,
+"bays": 24,
+"avg_free": 6.1,
+"free_share": 0.256,
+"score": "High"
+},
+{
+"zone": 7934,
+"name": "Batman Street (Spencer Street \u2013 King Street)",
+"lat": -37.810782,
+"lon": 144.951371,
+"bays": 8,
+"avg_free": 6.9,
+"free_share": 0.857,
+"score": "High"
+},
+{
+"zone": 7938,
+"name": "Jeffcott Street (Spencer Street \u2013 King Street)",
+"lat": -37.811791,
+"lon": 144.952086,
+"bays": 35,
+"avg_free": 6.1,
+"free_share": 0.176,
+"score": "Medium"
+},
+{
+"zone": 7939,
+"name": "King Street (Batman Street \u2013 Dudley Street)",
+"lat": -37.809949,
+"lon": 144.952616,
+"bays": 6,
+"avg_free": 6.0,
+"free_share": 1.0,
+"score": "High"
+},
+{
+"zone": 7943,
+"name": "King Street (La Trobe Street \u2013 Jeffcott Street)",
+"lat": -37.811784,
+"lon": 144.953645,
+"bays": 21,
+"avg_free": 17.1,
+"free_share": 0.816,
+"score": "High"
+},
+{
+"zone": 7944,
+"name": "King Street (Jeffcott Street \u2013 Batman Street)",
+"lat": -37.810922,
+"lon": 144.95308,
+"bays": 13,
+"avg_free": 12.0,
+"free_share": 0.923,
+"score": "High"
+},
+{
+"zone": 7948,
+"name": "La Trobe Street (King Street \u2013 Spencer Street)",
+"lat": -37.812787,
+"lon": 144.952835,
+"bays": 5,
+"avg_free": 4.4,
+"free_share": 0.886,
+"score": "High"
+},
+{
+"zone": 7951,
+"name": "Jeffcott Street (Spencer Street \u2013 King Street)",
+"lat": -37.811607,
+"lon": 144.952665,
+"bays": 5,
+"avg_free": 1.9,
+"free_share": 0.371,
+"score": "Medium"
+},
+{
+"zone": 7968,
+"name": "Spencer Street (La Trobe Street \u2013 Jeffcott Street)",
+"lat": -37.812453,
+"lon": 144.951123,
+"bays": 7,
+"avg_free": 6.6,
+"free_share": 0.939,
+"score": "High"
+},
+{
+"zone": 7969,
+"name": "Spencer Street (Jeffcott Street \u2013 Batman Street)",
+"lat": -37.811729,
+"lon": 144.950769,
+"bays": 4,
+"avg_free": 1.7,
+"free_share": 0.429,
+"score": "Medium"
+},
+{
+"zone": 7971,
+"name": "Spencer Street (Jeffcott Street \u2013 Batman Street)",
+"lat": -37.811479,
+"lon": 144.950637,
+"bays": 14,
+"avg_free": 8.1,
+"free_share": 0.582,
+"score": "High"
+},
+{
+"zone": 7972,
+"name": "Spencer Street (Batman Street \u2013 Dudley Street)",
+"lat": -37.810687,
+"lon": 144.950296,
+"bays": 11,
+"avg_free": 5.1,
+"free_share": 0.468,
+"score": "High"
+},
+{
+"zone": 7981,
+"name": "Victoria Street (Leveson Street \u2013 Errol Street)",
+"lat": -37.805472,
+"lon": 144.950284,
+"bays": 27,
+"avg_free": 14.9,
+"free_share": 0.55,
+"score": "High"
+},
+{
+"zone": 7990,
+"name": "William Street (A'Beckett Street \u2013 Franklin Street)",
+"lat": -37.810403,
+"lon": 144.955698,
+"bays": 6,
+"avg_free": 1.0,
+"free_share": 0.167,
+"score": "Medium"
+}
+]
+}
