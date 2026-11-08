@@ -79,4 +79,3 @@ node tools/record-demo.cjs                     # optional: hero.png + demo.webm 
 ```
 Data: [City of Melbourne Open Data, On-street Parking Bay Sensors](https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors/) and Parking zones linked to street segments, licensed CC BY 4.0. Map tiles © OpenStreetMap contributors. Code: MIT. A portfolio concept, not affiliated with Google.
 
-**About:** Built by Sai Akhilesh Veldi. [Portfolio](#) · [LinkedIn](https://www.linkedin.com/in/akhileshsai/)
