@@ -11,6 +11,8 @@
 ## How it works
 ![How it works](docs/flow.png)
 
+![Results at a glance](docs/results.png)
+
 **From the real data (Melbourne CBD, Sun 8 Nov 2026, 12:55 to 14:52 AEDT, 23 reads at ~5 min intervals):**
 - Of 275 scorable blocks, **177 Free now / 2 Likely within 5 min / 96 Hard**. City-wide 41% of live bays were free, but that average hides blocks at 0%.
 - **Turnover is measurable:** 2,856 bays freed up in 118 min, about 0.48 per bay per hour. The median block has a 27% chance of a bay freeing within 5 min (46% within 10).
@@ -41,6 +43,9 @@ A small chip on the arrival card: **Free now / Likely within 5 min / Hard**, wit
 **Not building (yet):** prediction for cities without sensor feeds; payment/reservation; off-street garages; turn-by-turn "go park here" rerouting; personal parking history. Each is bigger than the MVP and none is needed to test whether the chip changes behaviour.
 
 ## 4. North Star metric
+
+![Metrics framework](docs/metrics.png)
+
 **Median minutes from arrival to parked** for trips ending in an MVP city: time from first entering a 300 m radius of the destination to the phone's first sustained stop + walking motion (activity recognition).
 
 ## 5. Supporting metrics
@@ -59,6 +64,9 @@ A small chip on the arrival card: **Free now / Likely within 5 min / Hard**, wit
 Start where the data already exists: cities with open real-time sensor feeds (Melbourne here; SF and others next). High reach per trip in dense cores, low engineering effort (no new hardware), and the result is measurable with signals Maps already has. Turnover is modelled before occupancy forecasting because it answers the driver question directly ("will something open up?") and validates in minutes, not weeks. Alternatives considered: crowd-sourced "where I parked" (needs scale first), garage availability APIs (fragmented contracts), ML from Maps' own traffic (no ground truth yet). These come after the MVP shows the chip moves the North Star.
 
 ## 8. Experiment and learning
+
+![Experiment design](docs/experiment.png)
+
 **Test:** A/B by driver in Melbourne CBD, 4 weeks. Treatment sees the chip + better-bet link; control sees today's arrival card.
 **Decision rule:** ship if median arrival-to-parked drops ≥1 min (or ≥15%) with all guardrails holding; iterate on thresholds if accuracy <70%; stop if herding fires.
 
